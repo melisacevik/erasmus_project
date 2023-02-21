@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadir Has University Erasmus Application Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c8b790fce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon_image.png">
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-md">  
+            <div class="row container-fluid d-flex align-items-baseline m-0">
+        
+                <div class="col-12 col-md-2 d-flex justify-content-between align-items-center">  
+                    <a class="navbar-brand" href="https://global.khas.edu.tr/" target="_blank"> <img src="images/erasmuslogo.png" alt="Global" width="200px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+    
+                <div class="col-4 collapse navbar-collapse d-none d-md-block" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active mx-3" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="about.html"> About</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link mx-3" href="app_form.html">Application Form </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="faq.html">F.A.Q</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item signIn" href="signin_page.html">Sign In</a></li>
+                            <li><a class="dropdown-item signUp" href="signup_page.html">Sign Up</a></li>
+                            <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                <img src="images/englishPhoto.png" width="40px;">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item text-end" href="" style="font-size:small;" > Turkish
+                                        <img src="images/Flag_of_Turkey.svg" width="40px;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+        </header>
+
+
+
+
+    <div class="container">
+    <form>
+
+        <div class="row mt-2">
+            <div class="classBorder col-7 col-lg-5 d-flex align-items-center justify-content-center mx-auto">
+                <a class="navbar-brand" href="https://global.khas.edu.tr/" target="_blank"> <img src="images/erasmuslogo.png" alt="Global" width="300px"></a>
+            </div>
+        </div>
+        
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column align-items-center justify-content-center mx-auto" style="padding-top: 25px;"> 
+                <div class="col-12 d-flex flex-column mx-auto">
+                <h5> Kadir Has University Erasmus Program Application Form </h5>
+                <p> Please fill in the following fields to apply for the Erasmus program.</p> <hr>
+                </div>
+                <hr>
+            
+                <div class="col-12 d-flex mx-auto">
+                    <p class="appFormDefault"> Please sign in. </p>
+                    <a href="signin_page.html" class="form_button appFormDefault" type="button"> Login in</a>
+                    <p id="formMail" class="formMail">  </p>
+                    <a href="signin_page.html" class="form_button" type="button" class="formMail"> Change Account </a>
+                    
+                </div>
+                <div class="col-12 d-flex flex-column text_files">
+                    <p> After you log in, the information associated with your account is saved when you upload the files and submit this form. The email address you entered is only a part of your response.</p>
+                    <p class="requiredFiled"> * Required Field </p>
+                </div>
+        </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                <label for="email" class="emailText"> Email: <span class="requiredFiled col-2" > * </span> </label> <br>
+                <input type="text" id="email" name="email" class="inputBorder email col-8"><br><br> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="phone" class="phoneText"> Phone: <span class="requiredFiled col-2" > * </span></label>
+                    <p class="ExpP"> e.g. : 05061089291 </p>
+                    <input type="text" id="phone" name="phone" class="inputBorder phone col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="name" class="nameText"> Name: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="name" name="name" class="inputBorder name col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="lastName" class="lastNameText"> Last Name: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="lastName" name="lastName" class="inputBorder lastName col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="bdate" class="birthDateText"> Birth Date: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="date" id="bDate" name="bDate" class="inputBorder birthDate col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" >
+                    <label for="gender" class="genderText"> Gender: <span class="requiredFiled col-2"> * </span> </label> <br>
+                    <select name="gender" id="gender" class="inputBorder gender col-5" style="padding: 3px;"> 
+                        
+                        <option value="1"> </option>
+                        <option value="female"> Female </option>
+                        <option value="male"> Male </option>
+                    </select>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="nationality" class="nationalText"> Nationality: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="nationality" name="nationality" class="inputBorder nationality col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="2nd_Nationality" class="2nd_NationalText"> 2nd Nationality:</label> <br>
+                    <input type="text" id="2nd_Nationality" name="2nd_Nationality" class="inputBorder 2nd_Nationality col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="IDnumber" class="IDnumberText"> ID Number: <span class="requiredFiled col-2"> *</span></label> <br>
+                    <input type="text" id="IDnumber" name="IDnumber" class="inputBorder IDnumber col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="expDisability" class="expDisabilityText"> Disability Explanation: </label> <br>
+                    <textarea type="text" id="expDisability" name="expDisability" class="inputBorder expDisability col-8"> </textarea> <br><br>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="university" class="universityText"> University: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="university" name="university" class="inputBorder university col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="department" class="departmentText"> Department: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="department" name="department" class="inputBorder department col-8"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" >
+                    <label for="graduation" class="graduation"> Graduation Status: <span class="requiredFiled col-2 "> * </span> </label> <br>
+                    <select name="graduation" id="graduation" class=" inputBorder graduation col-5" style="padding: 3px;"> 
+                        <option value="1"> </option>
+                        <option value="yes"> Yes </option>
+                        <option value="no"> No </option>
+                    </select> 
+                    <br> <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="gdate" class="graduationDateText"> Graduation Date: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="date" id="gDate" name="gDate" class="inputBorder birthDate col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="GPA" class="GPA_Text"> GPA: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="GPA" name="GPA" class="inputBorder GPA col-1"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="country" class="countryText"> Country: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="country" name="GPA" class="inputBorder country col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="city" class="cityText"> City: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="city" name="city" class="inputBorder city col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="district" class="districtText"> District: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="district" name="district" class="inputBorder district col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="neighborhood" class="neighborhoodText"> Neighborhood: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="neighborhood" name="neighborhood" class="inputBorder neighborhood col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="street" class="streetText"> Street: <span class="requiredFiled col-2" > * </span></label> <br>
+                    <input type="text" id="street" name="street" class="inputBorder street col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="zipCode" class="zipCodeText"> Zip Code:  <span class="requiredFiled col-2" > * </span></label> <br>
+                    <p class="ExpP mb-3"> If there is no postal code, please write 0. </p>
+                    <input type="text" id="zipCode" name="zipCode" class="inputBorder zipCode col-4"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2"> 
+            <div class="classBorder col-5 d-flex flex-column mx-auto pt-2"> 
+                <div class="col-12 d-flex flex-column mx-auto" > 
+                    <label for="document" class="document"> Upload Files </label> <br>
+
+                    <p class="uploadList"> Upload CV </p>
+                    <p class="ExpP"> Please upload your CV in PDF format. </p>
+                    <input type="file" id="document1" name="document" class=" document col-8"><br>
+                    <p class="uploadList"> Upload Motivation Letter</p>
+                    <input type="file" id="document2" name="document" class=" document col-8"> <br>
+                    <p class="uploadList"> Upload Passport Copy</p>
+                    <input type="file" id="document3" name="document" class=" document col-8"> <br>
+                    <p class="uploadList"> Upload Residence Information</p>
+                    <input type="file" id="document4" name="document" class=" document col-8"> <br>
+                    <p class="uploadList"> Upload Diploma</p>
+                    <input type="file" id="document5" name="document" class=" document col-8"> <br>
+                    <p class="uploadList"> Upload English Proficiency Certificate</p>
+                    <input type="file" id="document6" name="document" class=" document col-8"> <br>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+
+    <div class="row d-flex justify-content-center align-items-center">
+    
+        <div class="col-6 d-flex justify-content-center align-content-center"> 
+            <button type="button" id="save_btn_id"> Save </button>
+        </div>
+    
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="row py-5 border-top">
+            <div class="col-12 col-md-3 col-lg-2">
+             <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="images/erasmuslogo.png" alt="Global" width="200px">
+            </a>
+            </div>
+            <div class="col-12 col-md-1 col-lg-1">
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-start justify-content-center flex-column ">
+            <h6 class="text-start">+90 212 533 02 51 / 1183-85-86</h6>
+            <ul class="nav d-flex flex-column align-items-start">
+                <li class="nav-item mb-2"><a href="mailto:erasmus@khas.edu.tr" class="nav-link p-0 text-muted"> erasmus@khas.edu.tr </a></li>
+                <li class="nav-item mb-2"><a href="mailto:exchange@khas.edu.tr" class="nav-link p-0 text-muted"> exchange@khas.edu.tr</a></li>
+            </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center flex-column align-items-start">
+            <h6 class="text-start">Cibali Mah. Kadir Has Cad. 34083</h6>
+            <ul class="nav d-flex flex-column align-items-start">
+                <li class="nav-item mb-2 ">Fatih,İstanbul</li>
+                <li class="nav-item mb-2 ">Turkey</li>
+            </ul>
+            </div>
+            <div class="col-12 col-md-12 col-lg-1 d-flex justify-content-center align-items-center"> 
+                <a href="https://www.instagram.com/global_khas/" target="_blank"> <i class="fa-brands fa-instagram fa-2x social_color me-3"></i> </a>
+                <a href="https://www.youtube.com/channel/UCSJiotYVrQ9JcKaQ8MIoH2w" target="_blank"> <i class="fa-brands fa-youtube fa-2x social_color "></i> </a>
+            </div>      
+        </footer>
+        </div>
+    
+    <div class="copyright-area">
+        <div class="container">
+        <div class="copyright-content">
+            <div class="d-flex justify-content-between">
+            <div class=""><p class="text-copyright">© Telif Hakkı 2023. Tüm Hakları Saklıdır.</p></div>
+            <div class=" text-right">
+                <aside id="nav_menu-4" class="widget widget_nav_menu">
+                    <div class="menu-privacy-2-container">
+                    <div id="menu-privacy-2" class="menu">
+                        <p id="menu-item-11982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11982 tc-menu-item tc-menu-depth-0 tc-menu-layout-default">
+                        <a href="https://www.khas.edu.tr/tr/hakkimizda/kalite-guvencesi/kvkk-aydinlatma-metni" target="_blank" class="tc-menu-inner" >KVKK Aydınlatma Metni</a>
+                        </p>
+                    </div>
+                    </div>
+                </aside>
+            </div>						
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <script src="script.js"> </script>
+
+
+
+
+</body>
+</html>

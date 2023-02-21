@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+header{
+    color: #595959;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: thin;
+}
+
+.navbar_text{
+    color: #595959;
+    font-size: 18px;
+    font-weight: thin;
+}
+
+footer{
+    color: #595959;
+    background-color: #f0eeea;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: thin;
+}
+.copyright-area{
+    color: #595959;
+    background-color: #f0eeea;
+    font-size: 18px;
+    font-weight: thin;
+}
+.tc-menu-inner{
+    color: #595959;
+    background-color: #f0eeea;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tc-menu-inner:hover{
+    text-decoration: underline;
+}
+.social_color{
+    color: #595959
+}
+.contact_head{
+    color: brown;
+}
+
+textarea {
+    width: 300px;
+    height: 50px;
+  }
+
+#save_btn_id{
+    width: 100px;
+    background-color: white;
+    color:black;
+    margin: 5px;
+}
+#clear_btn_id{
+    width: 100px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.classBorder{
+    border: 2px solid black ;
+    border-radius: 15px;
+    border-color: #CACFD2;
+}
+.text_files{
+    color: #5f6368;
+    font-size: small;
+}
+.requiredFiled{
+    color: red;
+    padding-left: 10px;
+}
+.inputBorder{
+    border: 0;
+    border-bottom: 1px solid ;
+}
+input{
+    outline: none;
+}
+.ExpP{
+    font-size: 12px;
+    padding: 1px;
+}
+.aboutText{
+    font-style: italic;
+}
+.appFormList{
+    padding: 10px;
+}
+.campusText{
+    font-style: italic;
+    line-height: 1.50;
+}
+.secondText{
+    margin-right: 30px;
+}
+.secondImage{
+    padding-right: 100px;
+    
+}
+.uploadList{
+    font-style:italic;
+    font-weight: bold;
+    color:firebrick;
+}
+.faqAnswer{
+    font-style: italic;
+}
+.faqQuestion{
+    font-weight: bold;
+    font-style: italic;
+}
+.faqHead{
+    font-style: italic;
+}
+.counter{
+    background-color: black;
+    padding: 5px;
+}
+
