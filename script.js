@@ -57,39 +57,71 @@ sessionStorage.setItem("isLogin" , false);
 
 window.location = "index.html";
 
-
 }
+
 
 if (sessionStorage.getItem("isLogin") == "true" ) {
-    document.getElementsByClassName("signIn")[0].style.display = "none";
-    document.getElementsByClassName("signUp")[0].style.display = "none";
+
+    let signInArrays = document.getElementsByClassName("signIn");
+
+    for ( let i=0 ; i < signInArrays.length ; i++){
+
+        signInArrays[i].style.display = "none";
+        
+    }
+
+    let signUpArrays = document.getElementsByClassName("signUp");
+
+    for ( let i=0 ; i < signUpArrays.length ; i++ ) {
+
+        signUpArrays[i].style.display = "none";
+    }
+
+    let logOutArrays = document.getElementsByClassName("logOut");
+
+    for ( let i=0 ; i < logOutArrays.length ; i++){
+
+        logOutArrays[i].style.display = "block";
+
+    }
+
 }
 else{
-    document.getElementsByClassName("logOut")[0].style.display = "none";
+
+
+    let signInArrays = document.getElementsByClassName("signIn");
+
+    for ( let i=0 ; i < signInArrays.length ; i++){
+
+        signInArrays[i].style.display = "block";
+        
+    }
+
+    let signUpArrays = document.getElementsByClassName("signUp");
+
+    for ( let i=0 ; i < signUpArrays.length ; i++ ) {
+
+        signUpArrays[i].style.display = "block";
+    }
+
+    let logOutArrays = document.getElementsByClassName("logOut");
+
+    for ( let i=0 ; i < logOutArrays.length ; i++){
+
+        logOutArrays[i].style.display = "none";
+
+    }
+
+    
 }
 
-
-
-var formMail = document.getElementById("formMail");
-var user = sessionStorage.getItem("user");
-user = user.split(",");
-formMail.innerHTML = user[0];
-
-function appFormMail(){
-
-if (sessionStorage.getItem("isLogin") == "true" ) {
-    document.getElementsByClassName("appFormDefault")[0].style.display = "none";
-    document.getElementsByClassName("appFormDefault")[1].style.display = "none";
-    document.getElementsByClassName("formMail")[1].innerHTML = "Change Account";
-}
-else{
-    document.getElementsByClassName("formMail")[0].style.display = "block";
-    document.getElementById("formMail").innerHTML = "";
-
-}
+if (sessionStorage.getItem("isLogin") == "true"){ 
+    var formMail = document.getElementById("formMail");
+    var user = sessionStorage.getItem("user");
+    user = user.split(",");
+    formMail.innerHTML = user[0]; 
 }
 
-appFormMail();
 
 
 // function turkceYap(){
