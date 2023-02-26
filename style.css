@@ -132,3 +132,22 @@ input{
     padding: 5px;
 }
 
+.TR{
+    display: none;
+}
+.text_TR{
+    display: none;
+}
+
+.aboutContactBody{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.aboutContactMain{
+    flex: 1;
+}
+

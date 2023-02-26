@@ -80,14 +80,88 @@ function appFormMail(){
 if (sessionStorage.getItem("isLogin") == "true" ) {
     document.getElementsByClassName("appFormDefault")[0].style.display = "none";
     document.getElementsByClassName("appFormDefault")[1].style.display = "none";
+    document.getElementsByClassName("formMail")[1].innerHTML = "Change Account";
 }
 else{
     document.getElementsByClassName("formMail")[0].style.display = "block";
-    document.getElementsByClassName("formMail")[1].style.display = "block";
+    document.getElementById("formMail").innerHTML = "";
+
 }
 }
 
 appFormMail();
+
+
+// function turkceYap(){
+
+//     sessionStorage.setItem("language" , "TR");
+//     console.log(document.getElementsByClassName("ENG"));
+
+// if (sessionStorage.getItem("language") == "TR"){
+
+//     document.getElementsByClassName("ENG")[0].style.display = "none";
+//     document.getElementsByClassName("TR")[0].style.display = "block";
+    
+// }
+
+// }
+
+// function english(){
+
+//     sessionStorage.setItem("language" , "ENG");
+
+//     if(sessionStorage.getItem("language") == "ENG"){
+
+//         document.getElementsByClassName("TR")[0].style.display = "none";
+//         document.getElementsByClassName("ENG")[0].style.display = "block";
+    
+//     }
+
+// }
+
+// function turkceYap(){
+
+//     sessionStorage.setItem("language" , "TR");
+//     console.log(document.getElementsByClassName("ENG"));
+
+// if (sessionStorage.getItem("language") == "TR"){
+
+//     document.getElementsByClassName("text_ENG")[0].style.display = "none";
+//     document.getElementsByClassName("text_TR")[0].style.display = "block";
+//     document.getElementsByClassName("text_ENG")[1].style.display = "none";
+//     document.getElementsByClassName("text_TR")[1].style.display = "block";
+//     document.getElementsByClassName("text_ENG")[2].style.display = "none";
+//     document.getElementsByClassName("text_TR")[2].style.display = "block";
+//     document.getElementsByClassName("text_ENG")[3].style.display = "none";
+//     document.getElementsByClassName("text_TR")[3].style.display = "block";
+//     document.getElementsByClassName("text_ENG")[4].style.display = "none";
+//     document.getElementsByClassName("text_TR")[4].style.display = "block";
+    
+// }
+
+// }
+
+// function english(){
+
+//     sessionStorage.setItem("language" , "ENG");
+
+//     if(sessionStorage.getItem("language") == "ENG"){
+
+//         document.getElementsByClassName("text_TR")[0].style.display = "none";
+//         document.getElementsByClassName("text_ENG")[0].style.display = "block";
+//         document.getElementsByClassName("text_TR")[1].style.display = "none";
+//         document.getElementsByClassName("text_ENG")[1].style.display = "block";
+//         document.getElementsByClassName("text_TR")[2].style.display = "none";
+//         document.getElementsByClassName("text_ENG")[2].style.display = "block";
+//         document.getElementsByClassName("text_TR")[3].style.display = "none";
+//         document.getElementsByClassName("text_ENG")[3].style.display = "block";
+//         document.getElementsByClassName("text_TR")[4].style.display = "none";
+//         document.getElementsByClassName("text_ENG")[4].style.display = "block";
+    
+//     }
+
+// }
+
 
 
 

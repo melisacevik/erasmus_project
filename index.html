@@ -20,53 +20,136 @@
 <body>
     
     <header> 
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-lg">
         
         <div class="row container-fluid d-flex align-items-baseline m-0">
     
-
-            <div class="col-12 col-md-2 d-flex justify-content-between align-items-center">  
+            <div class="col-12 col-lg-2 d-flex justify-content-between align-items-center">  
                 <a class="navbar-brand" href="https://global.khas.edu.tr/" target="_blank"> <img src="images/erasmuslogo.png" alt="Global" width="200px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <button class="navbar-toggler d-block d-lg-none d-flex " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end d-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link active mx-1 ENG" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link active mx-1 TR " aria-current="page" href="index.html">Ana Sayfa</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-1 ENG" href="about.html"> About</a>
+                                <a class="nav-link mx-1 TR " href="about.html"> Hakkında </a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link mx-1 ENG" href="app_form.html">Application Form </a>
+                                <a class="nav-link mx-1 TR " href="app_form.html">Başvuru Formu </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-1 ENG" href="contact.html">Contact</a>
+                                <a class="nav-link mx-1 TR " href="contact.html">İletişim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-1 ENG " href="faq.html">F.A.Q</a>
+                                <a class="nav-link mx-1 TR " href="faq.html">S.S.S</a>
+                            </li>
+                          <div>
+                            <li class="nav-item dropdown ENG">
+                                <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end ">
+                                <li><a class="dropdown-item signIn ENG" href="signin_page.html">Sign In</a></li>
+                                <li><a class="dropdown-item signUp ENG" href="signup_page.html">Sign Up</a></li>
+                                <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown TR">
+                                    <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item signIn TR" href="signin_page.html">Giriş Yap</a></li>
+                                    <li><a class="dropdown-item signUp TR" href="signup_page.html">Kayıt Ol</a></li>
+                                    <li><a class="dropdown-item logOut" onclick="logOut()">Çıkış Yap</a></li>
+                                </ul>
+                            </li>
+                        </div>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mx-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                    <img src="images/englishPhoto.png" width="40px;"  onclick="english()" >
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" style="font-size:small;"  >
+                                            <img src="images/Flag_of_Turkey.svg" width="40px;" onclick="turkceYap()" >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
             </div>
-            <div class="col-4 collapse navbar-collapse d-none d-lg-block" id="navbarNavDropdown">
+            <div class="col-9 collapse d-none d-lg-flex justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ">
-                        <a class="nav-link active mx-1" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active mx-1 ENG" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active mx-1 TR " aria-current="page" href="index.html">Ana Sayfa</a>
+                        
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-1" href="about.html"> About</a>
+                        <a class="nav-link mx-1 ENG" href="about.html"> About</a>
+                        <a class="nav-link mx-1 TR " href="about.html"> Hakkında </a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link mx-1" href="app_form.html">Application Form </a>
+                        <a class="nav-link mx-1 ENG" href="app_form.html">Application Form </a>
+                        <a class="nav-link mx-1 TR " href="app_form.html">Başvuru Formu </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-1" href="contact.html">Contact</a>
+                        <a class="nav-link mx-1 ENG" href="contact.html">Contact</a>
+                        <a class="nav-link mx-1 TR " href="contact.html">İletişim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-1" href="faq.html">F.A.Q</a>
+                        <a class="nav-link mx-1 ENG " href="faq.html">F.A.Q</a>
+                        <a class="nav-link mx-1 TR " href="faq.html">S.S.S</a>
                     </li>
-                    <li class="nav-item dropdown">
+                  <div>
+                    <li class="nav-item dropdown ENG">
                         <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
                             <i class="fa-solid fa-user"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item signIn" href="signin_page.html">Sign In</a></li>
-                        <li><a class="dropdown-item signUp" href="signup_page.html">Sign Up</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item signIn ENG" href="signin_page.html">Sign In</a></li>
+                        <li><a class="dropdown-item signUp ENG" href="signup_page.html">Sign Up</a></li>
                         <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown TR">
+                            <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item signIn TR" href="signin_page.html">Giriş Yap</a></li>
+                            <li><a class="dropdown-item signUp TR" href="signup_page.html">Kayıt Ol</a></li>
+                            <li><a class="dropdown-item logOut" onclick="logOut()">Çıkış Yap</a></li>
+                        </ul>
+                    </li>
+                </div>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
-                            <img src="images/englishPhoto.png" width="40px;">
+                        <a class="nav-link dropdown-toggle mx-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            <img src="images/englishPhoto.png" width="40px;"  onclick="english()" >
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <a class="dropdown-item text-end" href="" style="font-size:small;" > Turkish
-                                    <img src="images/Flag_of_Turkey.svg" width="40px;">
+                                <a class="dropdown-item" style="font-size:small;"  >
+                                    <img src="images/Flag_of_Turkey.svg" width="40px;" onclick="turkceYap()" >
                                 </a>
                             </li>
                         </ul>
@@ -77,27 +160,26 @@
 
         </div>
     </nav>
-    </header>
 
-    <div class="container-fluid"> 
-        <div class="row counter"> 
-            <div class="col-12"> </div>
-        </div>
-    </div>
+    
+    </header>
 
     <div class="container mt-100 col-lg-12 col-xxl-12 px-4 py-5 ">
 
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-content-center mb-5" style="font-style: italic;">
-                <h3> Welcome To Kadir Has University!</h3>
+                <h3 class="text_ENG" > Welcome To Kadir Has University!</h3>
+                <h3 class="text_TR" > Kadir Has Üniversite'sine Hoş Geldiniz! </h3>
             </div>
 
         </div>
     
         <div class="row d-flex justify-content-between"> 
             <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center"> 
-            <p class="fw-small campusText"> Kadir Has University campus, located in the district of Fatih in Istanbul, in the Cibali neighborhood on the shore of the Golden Horn, can be easily reached from every point of Istanbul. Tekel Cibali Factory building, which was used as Tekel’s tobacco warehouse and cigarette factory, 
+            <p class="fw-small campusText text_ENG"> Kadir Has University campus, located in the district of Fatih in Istanbul, in the Cibali neighborhood on the shore of the Golden Horn, can be easily reached from every point of Istanbul. Tekel Cibali Factory building, which was used as Tekel’s tobacco warehouse and cigarette factory, 
                 was restored in accordance with its original form and turned into our university campus. </p> <br>
+            <p class="fw-small campusText text_TR"> İstanbul’un Fatih ilçesinde, Haliç kıyısındaki Cibali semtinde yer alan Kadir Has Üniversitesi kampüsüne İstanbul’un her noktasından kolaylıkla ulaşılabilmektedir. Tekel’in tütün deposu ve sigara fabrikası olarak kullanılan Tekel Cibali Tesisi binası, 
+                aslına uygun biçimde onarılarak üniversitemizin kampüsüne dönüştürülmüştür. </p> <br>
             </div>
     
             <div class="col-lg-6 d-flex justify-content-center"> 
@@ -111,17 +193,22 @@
                 </div>
 
             <div class="col-lg-6  d-flex flex-column align-items-center justify-content-center"> 
-            <p class="fw-small campusText" > Today, the rectorate, faculties, institutes, and research centers serve on this campus, 
+            <p class="fw-small campusText text_ENG" > Today, the rectorate, faculties, institutes, and research centers serve on this campus, 
                 located in a historically significant region of Istanbul, which is impressive and has traces of the past. 
                 Our campus has received the European architecture award “Europa Nostra Award.”
+            </p> <br>
+            <p class="fw-small campusText text_TR" > İstanbul’un tarihi açıdan oldukça önemli bir bölgesinde, etkileyici ve geçmişten izler taşıyan, Avrupa mimarlık ödülü “Europa Nostra Ödülü”nü almış olan bu kampüste bugün rektörlük, 
+                fakülteler, enstitüler ve araştırma merkezleri hizmet vermektedir.
             </p> <br>
             </div>
         </div>
 
         <div class="row d-flex justify-content-between mt-5"> 
             <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center"> 
-            <p class="fw-small campusText"> The campus has an indoor usage area of 50 thousand square meters, including classrooms, laboratories, an information center (library), 
+            <p class="fw-small campusText text_ENG"> The campus has an indoor usage area of 50 thousand square meters, including classrooms, laboratories, an information center (library), 
                 theatre, conference and movie theaters, sports facilities, restaurants, cafeterias, and a dance studio. </p> <br>
+            <p class="fw-small campusText text_TR" >  Kapalı kullanım alanı 50 bin metrekareye ulaşan kampüste derslikler, laboratuvarlar, bilgi merkezi (kütüphane), tiyatro, konferans ve sinema salonları ile birlikte, 
+                spor tesisleri, restoran, kafeteryalar ve dans stüdyosu bulunur.  </p> <br>
             </div>
     
             <div class="col-lg-6 d-flex justify-content-center"> 
@@ -131,8 +218,10 @@
 
         <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 mt-4 d-flex flex-column justify-content-start"> 
-            <h4 > Erasmus Students </h4>
-            <p style="font-style:italic;"> Foreign students who study at our universities in Turkey thanks to the Erasmus program...</p>
+            <h4 class="text_ENG"> Erasmus Students </h4>
+            <h4 class="text_TR"> Erasmus Öğrencileri </h4>
+            <p class="text_ENG" style="font-style:italic;"> Foreign students who study at our university in Turkey thanks to the Erasmus program...</p>
+            <p class="text_TR" style="font-style:italic;"> Erasmus programı sayesinde Türkiye'deki üniversitemizde okuyan yabancı öğrenciler...</p>
         </div>
         <div class="container d-flex align-content-center justify-content-center">
         <div class="col-12 col-lg-8 mt-4 "> 
@@ -247,10 +336,6 @@
             </div>
         </div>
     </div>
-
-
-    
-
 
 
     <script src="script.js"></script>
