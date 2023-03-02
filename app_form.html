@@ -77,12 +77,12 @@
             
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle mx-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                                        <img src="images/englishPhoto.png" width="40px;"  onclick="english()" >
+                                        <img src="images/englishPhoto.png" width="40px;"  >
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end">
                                         <li>
                                             <a class="dropdown-item" style="font-size:small;"  >
-                                                <img src="images/Flag_of_Turkey.svg" width="40px;" onclick="turkceYap()" >
+                                                <img src="images/Flag_of_Turkey.svg" width="40px;" >
                                             </a>
                                         </li>
                                     </ul>
@@ -95,24 +95,19 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item ">
                             <a class="nav-link active mx-1 ENG" aria-current="page" href="index.html">Home</a>
-                            <a class="nav-link active mx-1 TR " aria-current="page" href="index.html">Ana Sayfa</a>
                             
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-1 ENG" href="about.html"> About</a>
-                            <a class="nav-link mx-1 TR " href="about.html"> Hakkında </a>
                         </li>
                          <li class="nav-item">
                             <a class="nav-link mx-1 ENG" href="app_form.html">Application Form </a>
-                            <a class="nav-link mx-1 TR " href="app_form.html">Başvuru Formu </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-1 ENG" href="contact.html">Contact</a>
-                            <a class="nav-link mx-1 TR " href="contact.html">İletişim</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-1 ENG " href="faq.html">F.A.Q</a>
-                            <a class="nav-link mx-1 TR " href="faq.html">S.S.S</a>
                         </li>
                       <div>
                         <li class="nav-item dropdown ENG">
@@ -125,26 +120,16 @@
                             <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown TR">
-                                <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
-                                    <i class="fa-solid fa-user"></i>
-                                </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item signIn TR" href="signin_page.html">Giriş Yap</a></li>
-                                <li><a class="dropdown-item signUp TR" href="signup_page.html">Kayıt Ol</a></li>
-                                <li><a class="dropdown-item logOut" onclick="logOut()">Çıkış Yap</a></li>
-                            </ul>
-                        </li>
                     </div>
     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle mx-1" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                                <img src="images/englishPhoto.png" width="40px;"  onclick="english()" >
+                                <img src="images/englishPhoto.png" width="40px;" >
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" style="font-size:small;"  >
-                                        <img src="images/Flag_of_Turkey.svg" width="40px;" onclick="turkceYap()" >
+                                        <img src="images/Flag_of_Turkey.svg" width="40px;">
                                     </a>
                                 </li>
                             </ul>
@@ -184,7 +169,7 @@
                     <p class="appFormDefault"> Please sign in. </p>
                     <a href="signin_page.html" class="form_button appFormDefault" type="button"> Login in</a>
                     <p id="formMail" class="formMail">  </p>
-                    <a href="signin_page.html" class="form_button formMail" type="button">  </a>
+                    <a href="signin_page.html" class="form_button formMail" type="button" onClick = "logOut()">  </a>
                     
                 </div>
                 <div class="col-12 d-flex flex-column text_files">
@@ -289,8 +274,15 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 
                 <div class="col-12 d-flex flex-column mx-auto" > 
-                    <label for="expDisability" class="expDisabilityText"> Disability Explanation: </label> <br>
-                    <textarea type="text" id="expDisability" name="expDisability" class="inputBorder expDisability col-8"> </textarea> <br><br>
+                    <label for="disability" class="disabilityText"> Disability Condition:  </label> <br>
+                    <select name="disability" id="disability" class="inputBorder disability col-5" style="padding: 3px;" onchange="disabilityFunct(event)" > 
+                        
+                        <option value="1"> </option>
+                        <option value="yes"> Yes </option>
+                        <option value="no"> No </option>
+                    </select> <br>
+                    <label for="expDisability" class="expDisabilityText hiddenDisa"> Disability Explanation: <span class="requiredFiled col-2 "> * </span> </label> <br>
+                    <textarea type="text" id="expDisability" name="expDisability" class="inputBorder expDisability col-8 hiddenDisa"> </textarea> <br>
                 </div>
 
             </div>

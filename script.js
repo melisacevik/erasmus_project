@@ -1,10 +1,10 @@
 function signUp(){
 
-    var user = [(document.getElementById("email").value), (document.getElementById("password").value)];
-    var password2 = document.getElementById("repassword").value;
+    let user = [(document.getElementById("email").value), (document.getElementById("password").value)];
+    let password2 = document.getElementById("repassword").value;
 
 
-    var text = document.getElementById("text");
+    let text = document.getElementById("text");
 
     if ( user[1] == password2){
         text.innerHTML = "Account Successfully Created!"
@@ -25,14 +25,14 @@ function signUp(){
 
 function signIn(){
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-    var text = document.getElementById("text");
+    let text = document.getElementById("text");
 
-    var user = sessionStorage.getItem("user");
+    let user = sessionStorage.getItem("user");
     user = user.split(",");
-    var isLogin = false;
+    let isLogin = false;
 
 
     if (email == user[0] && password == user[1]) {
@@ -122,21 +122,41 @@ if (sessionStorage.getItem("isLogin") == "true"){
     formMail.innerHTML = user[0]; 
 }
 
+function disabilityFunct(event) {
+
+    var selectElement = document.getElementById("disability");
+    var selectedValue = selectElement.value;
+
+    if( selectedValue == 'yes'){
+
+    document.getElementsByClassName("hiddenDisa")[0].style.display = "block";
+    document.getElementsByClassName("hiddenDisa")[1].style.display = "block";
+    }else{
+        document.getElementsByClassName("hiddenDisa")[0].style.display = "none";
+        document.getElementsByClassName("hiddenDisa")[1].style.display = "none";
+    }
 
 
-// function turkceYap(){
+}
 
-//     sessionStorage.setItem("language" , "TR");
-//     console.log(document.getElementsByClassName("ENG"));
 
-// if (sessionStorage.getItem("language") == "TR"){
+
+
+
+
+//  function turkceYap(){
+
+//      sessionStorage.setItem("language" , "TR");
+//      console.log(document.getElementsByClassName("ENG"));
+
+//  if (sessionStorage.getItem("language") == "TR"){
 
 //     document.getElementsByClassName("ENG")[0].style.display = "none";
-//     document.getElementsByClassName("TR")[0].style.display = "block";
+//      document.getElementsByClassName("TR")[0].style.display = "block";
     
-// }
+//  }
 
-// }
+//  }
 
 // function english(){
 
