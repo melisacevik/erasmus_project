@@ -32,45 +32,29 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item ">
-                                    <a class="nav-link active mx-1 ENG" aria-current="page" href="index.html">Home</a>
-                                    <a class="nav-link active mx-1 TR " aria-current="page" href="index.html">Ana Sayfa</a>
-                                    
+                                    <a class="nav-link active mx-1" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-1 ENG" href="about.html"> About</a>
-                                    <a class="nav-link mx-1 TR " href="about.html"> Hakkında </a>
+                                    <a class="nav-link mx-1" href="about.html"> About</a>
                                 </li>
                                  <li class="nav-item">
-                                    <a class="nav-link mx-1 ENG" href="app_form.html">Application Form </a>
-                                    <a class="nav-link mx-1 TR " href="app_form.html">Başvuru Formu </a>
+                                    <a class="nav-link mx-1 loginCheck" href="app_form.html">Application Form </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-1 ENG" href="contact.html">Contact</a>
-                                    <a class="nav-link mx-1 TR " href="contact.html">İletişim</a>
+                                    <a class="nav-link mx-1 " href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-1 ENG " href="faq.html">F.A.Q</a>
-                                    <a class="nav-link mx-1 TR " href="faq.html">S.S.S</a>
+                                    <a class="nav-link mx-1 " href="faq.html">F.A.Q</a>
                                 </li>
                               <div>
-                                <li class="nav-item dropdown ENG">
+                                <li class="nav-item dropdown ">
                                     <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
                                         <i class="fa-solid fa-user"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end ">
-                                    <li><a class="dropdown-item signIn ENG" href="signin_page.html">Sign In</a></li>
-                                    <li><a class="dropdown-item signUp ENG" href="signup_page.html">Sign Up</a></li>
+                                    <li><a class="dropdown-item signIn " href="signin_page.html">Sign In</a></li>
+                                    <li><a class="dropdown-item signUp " href="signup_page.html">Sign Up</a></li>
                                     <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown TR">
-                                        <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
-                                            <i class="fa-solid fa-user"></i>
-                                        </a>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a class="dropdown-item signIn TR" href="signin_page.html">Giriş Yap</a></li>
-                                        <li><a class="dropdown-item signUp TR" href="signup_page.html">Kayıt Ol</a></li>
-                                        <li><a class="dropdown-item logOut" onclick="logOut()">Çıkış Yap</a></li>
                                     </ul>
                                 </li>
                             </div>
@@ -94,29 +78,29 @@
                 <div class="col-9 collapse d-none d-lg-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item ">
-                            <a class="nav-link active mx-1 ENG" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active mx-1" aria-current="page" href="index.html">Home</a>
                             
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-1 ENG" href="about.html"> About</a>
+                            <a class="nav-link mx-1" href="about.html"> About</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link mx-1 ENG" href="app_form.html">Application Form </a>
+                            <a class="nav-link mx-1 loginCheck" href="app_form.html">Application Form </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-1 ENG" href="contact.html">Contact</a>
+                            <a class="nav-link mx-1" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-1 ENG " href="faq.html">F.A.Q</a>
+                            <a class="nav-link mx-1" href="faq.html">F.A.Q</a>
                         </li>
                       <div>
-                        <li class="nav-item dropdown ENG">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > 
                                 <i class="fa-solid fa-user"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end ">
-                            <li><a class="dropdown-item signIn ENG" href="signin_page.html">Sign In</a></li>
-                            <li><a class="dropdown-item signUp ENG" href="signup_page.html">Sign Up</a></li>
+                            <li><a class="dropdown-item signIn " href="signin_page.html">Sign In</a></li>
+                            <li><a class="dropdown-item signUp " href="signup_page.html">Sign Up</a></li>
                             <li><a class="dropdown-item logOut" onclick="logOut()">Log Out</a></li>
                             </ul>
                         </li>
@@ -148,7 +132,7 @@
 
 
     <div class="container">
-    <form>
+    <form class="g-3 needs-validation" novalidate method="get" action="uploadFiles.html">
 
         <div class="row mt-2">
             <div class="classBorder col-12 col-lg-5 d-flex align-items-center justify-content-center mx-auto">
@@ -183,7 +167,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                 <label for="email" class="emailText"> Email: <span class="requiredFiled col-2" > * </span> </label> <br>
-                <input type="text" id="email" name="email" class="inputBorder email col-8"><br><br> 
+                <input type="email" id="email" name="email" class="inputBorder email col-8 form-control" required pattern=".+@.+.com"><br>
+                <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -193,7 +178,8 @@
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="phone" class="phoneText"> Phone: <span class="requiredFiled col-2" > * </span></label>
                     <p class="ExpP"> e.g. : 05061089291 </p>
-                    <input type="text" id="phone" name="phone" class="inputBorder phone col-8"><br><br>
+                    <input type="phone" id="phone" name="phone" class="inputBorder phone col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -202,7 +188,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="name" class="nameText"> Name: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="name" name="name" class="inputBorder name col-8"><br><br>
+                    <input type="text" id="name" name="name" class="inputBorder name col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -211,7 +198,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="lastName" class="lastNameText"> Last Name: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="lastName" name="lastName" class="inputBorder lastName col-8"><br><br>
+                    <input type="text" id="lastName" name="lastName" class="inputBorder lastName col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -220,7 +208,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="bdate" class="birthDateText"> Birth Date: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="date" id="bDate" name="bDate" class="inputBorder birthDate col-4"><br><br>
+                    <input type="date" id="bDate" name="bDate" class="inputBorder birthDate col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -229,13 +218,14 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" >
                     <label for="gender" class="genderText"> Gender: <span class="requiredFiled col-2"> * </span> </label> <br>
-                    <select name="gender" id="gender" class="inputBorder gender col-5" style="padding: 3px;"> 
+                    <select name="gender" id="gender" class="inputBorder gender col-5 form-control" style="padding: 3px;" required> 
                         
-                        <option value="1"> </option>
+                        <option value="" selected disabled hidden> </option>
                         <option value="female"> Female </option>
                         <option value="male"> Male </option>
                     </select>
-                    <br><br>
+                    <br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -244,7 +234,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="nationality" class="nationalText"> Nationality: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="nationality" name="nationality" class="inputBorder nationality col-8"><br><br>
+                    <input type="text" id="nationality" name="nationality" class="inputBorder nationality col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -255,7 +246,7 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="2nd_Nationality" class="2nd_NationalText"> 2nd Nationality:</label> <br>
-                    <input type="text" id="2nd_Nationality" name="2nd_Nationality" class="inputBorder 2nd_Nationality col-8"><br><br>
+                    <input type="text" id="2nd_Nationality" name="2nd_Nationality" class="inputBorder 2nd_Nationality col-8"><br>
                 </div>
             </div>
         </div>
@@ -264,7 +255,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="IDnumber" class="IDnumberText"> ID Number: <span class="requiredFiled col-2"> *</span></label> <br>
-                    <input type="text" id="IDnumber" name="IDnumber" class="inputBorder IDnumber col-8"><br><br>
+                    <input type="number" id="IDnumber" name="IDnumber" class="inputBorder IDnumber col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -275,14 +267,14 @@
                 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="disability" class="disabilityText"> Disability Condition:  </label> <br>
-                    <select name="disability" id="disability" class="inputBorder disability col-5" style="padding: 3px;" onchange="disabilityFunct(event)" > 
+                    <select name="disability" id="disability" class="inputBorder disability col-5 form-control" style="padding: 3px;" onchange="disabilityFunct()" > 
                         
-                        <option value="1"> </option>
+                        <option value="" selected disabled hidden> </option>
                         <option value="yes"> Yes </option>
                         <option value="no"> No </option>
                     </select> <br>
                     <label for="expDisability" class="expDisabilityText hiddenDisa"> Disability Explanation: <span class="requiredFiled col-2 "> * </span> </label> <br>
-                    <textarea type="text" id="expDisability" name="expDisability" class="inputBorder expDisability col-8 hiddenDisa"> </textarea> <br>
+                    <textarea type="text" id="expDisability" name="expDisability" class="inputBorder expDisability col-8 hiddenDisa form-control" required> </textarea> <br>
                 </div>
 
             </div>
@@ -292,7 +284,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="university" class="universityText"> University: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="university" name="university" class="inputBorder university col-8"><br><br>
+                    <input type="text" id="university" name="university" class="inputBorder university col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -301,7 +294,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="department" class="departmentText"> Department: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="department" name="department" class="inputBorder department col-8"><br><br>
+                    <input type="text" id="department" name="department" class="inputBorder department col-8 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -310,8 +304,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" >
                     <label for="graduation" class="graduation"> Graduation Status: <span class="requiredFiled col-2 "> * </span> </label> <br>
-                    <select name="graduation" id="graduation" class=" inputBorder graduation col-5" style="padding: 3px;"> 
-                        <option value="1"> </option>
+                    <select name="graduation" id="graduation" class=" inputBorder graduation col-5 form-control" style="padding: 3px;" required> 
+                        <option value="" selected disabled hidden> </option>
                         <option value="yes"> Yes </option>
                         <option value="no"> No </option>
                     </select> 
@@ -324,7 +318,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="gdate" class="graduationDateText"> Graduation Date: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="date" id="gDate" name="gDate" class="inputBorder birthDate col-4"><br><br>
+                    <input type="date" id="gDate" name="gDate" class="inputBorder birthDate col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -333,7 +328,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="GPA" class="GPA_Text"> GPA: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="GPA" name="GPA" class="inputBorder GPA col-1"><br><br>
+                    <input type="number" id="GPA" name="GPA" class="inputBorder GPA col-1 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -342,7 +338,7 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="country" class="countryText"> Country: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="country" name="GPA" class="inputBorder country col-4"><br><br>
+                    <input type="text" id="country" name="GPA" class="inputBorder country col-4 form-control" required><br>
                 </div>
             </div>
         </div>
@@ -351,7 +347,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="city" class="cityText"> City: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="city" name="city" class="inputBorder city col-4"><br><br>
+                    <input type="text" id="city" name="city" class="inputBorder city col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -360,7 +357,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="district" class="districtText"> District: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="district" name="district" class="inputBorder district col-4"><br><br>
+                    <input type="text" id="district" name="district" class="inputBorder district col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -369,7 +367,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="neighborhood" class="neighborhoodText"> Neighborhood: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="neighborhood" name="neighborhood" class="inputBorder neighborhood col-4"><br><br>
+                    <input type="text" id="neighborhood" name="neighborhood" class="inputBorder neighborhood col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -378,7 +377,8 @@
             <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="street" class="streetText"> Street: <span class="requiredFiled col-2" > * </span></label> <br>
-                    <input type="text" id="street" name="street" class="inputBorder street col-4"><br><br>
+                    <input type="text" id="street" name="street" class="inputBorder street col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
@@ -388,44 +388,25 @@
                 <div class="col-12 d-flex flex-column mx-auto" > 
                     <label for="zipCode" class="zipCodeText"> Zip Code:  <span class="requiredFiled col-2" > * </span></label> <br>
                     <p class="ExpP mb-3"> If there is no postal code, please write 0. </p>
-                    <input type="text" id="zipCode" name="zipCode" class="inputBorder zipCode col-4"><br><br>
+                    <input type="text" id="zipCode" name="zipCode" class="inputBorder zipCode col-4 form-control" required><br>
+                    <div class="valid-feedback"> Looks good!</div>
                 </div>
             </div>
         </div>
 
-        <div class="row mt-2"> 
-            <div class="classBorder col-12 col-lg-5 d-flex flex-column mx-auto pt-2"> 
-                <div class="col-12 d-flex flex-column mx-auto" > 
-                    <label for="document" class="document"> Upload Files </label> <br>
-
-                    <p class="uploadList"> Upload CV </p>
-                    <p class="ExpP"> Please upload your CV in PDF format. </p>
-                    <input type="file" id="document1" name="document" class=" document col-8"><br>
-                    <p class="uploadList"> Upload Motivation Letter</p>
-                    <input type="file" id="document2" name="document" class=" document col-8"> <br>
-                    <p class="uploadList"> Upload Passport Copy</p>
-                    <input type="file" id="document3" name="document" class=" document col-8"> <br>
-                    <p class="uploadList"> Upload Residence Information</p>
-                    <input type="file" id="document4" name="document" class=" document col-8"> <br>
-                    <p class="uploadList"> Upload Diploma</p>
-                    <input type="file" id="document5" name="document" class=" document col-8"> <br>
-                    <p class="uploadList"> Upload English Proficiency Certificate</p>
-                    <input type="file" id="document6" name="document" class=" document col-8"> <br>
-                </div>
+       
+        <div class="row d-flex justify-content-center align-items-center">
+    
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-content-center"> 
+                <input type="submit" value="Submit" id="save_btn_id"> 
             </div>
+        
         </div>
-
 
 
     </form>
 
-    <div class="row d-flex justify-content-center align-items-center">
-    
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-content-center"> 
-            <button type="button" id="save_btn_id"> Save </button>
-        </div>
-    
-        </div>
+
 
     </div>
 
@@ -469,7 +450,7 @@
                     <div class="menu-privacy-2-container">
                     <div id="menu-privacy-2" class="menu">
                         <p id="menu-item-11982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11982 tc-menu-item tc-menu-depth-0 tc-menu-layout-default">
-                        <a href="https://www.khas.edu.tr/tr/hakkimizda/kalite-guvencesi/kvkk-aydinlatma-metni" target="_blank" class="tc-menu-inner" >KVKK Aydınlatma Metni</a>
+                        <a href="https://www.khas.edu.tr/kvkk-aydinlatma-metni/" target="_blank" class="tc-menu-inner" >KVKK Aydınlatma Metni</a>
                         </p>
                     </div>
                     </div>

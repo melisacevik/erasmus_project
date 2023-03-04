@@ -1,3 +1,9 @@
+function isEmailAddress(str) {
+    var pattern =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return pattern.test(str);
+ }
+
+
 function signUp(){
 
     let user = [(document.getElementById("email").value), (document.getElementById("password").value)];
@@ -6,7 +12,7 @@ function signUp(){
 
     let text = document.getElementById("text");
 
-    if ( user[1] == password2){
+    if ( user[1] == password2 && isEmailAddress(user[0]) == true && user[1].length > 8 ){
         text.innerHTML = "Account Successfully Created!"
         text.style.color = "#0d6efd";
 
@@ -16,7 +22,7 @@ function signUp(){
     }
     
     else {
-        text.innerHTML = "Invalid Login Information!"
+        text.innerHTML = "The email or password you entered is incorrect! Please enter more than 8 long character for password. "
         text.style.color = "red";
     }
 
@@ -46,7 +52,7 @@ function signIn(){
         sessionStorage.setItem("isLogin" , isLogin);
     }
     else{
-        text.innerHTML = "Invalid Login Information!"
+        text.innerHTML = "The email or password you entered is incorrect!"
         text.style.fontStyle =  "italic";
     }
 }
@@ -61,6 +67,9 @@ window.location = "index.html";
 
 
 if (sessionStorage.getItem("isLogin") == "true" ) {
+
+    document.getElementsByClassName("loginCheck")[0].style.display = "block";
+    document.getElementsByClassName("loginCheck")[1].style.display = "block";
 
     let signInArrays = document.getElementsByClassName("signIn");
 
@@ -88,6 +97,8 @@ if (sessionStorage.getItem("isLogin") == "true" ) {
 }
 else{
 
+    document.getElementsByClassName("loginCheck")[0].style.display = "none";
+    document.getElementsByClassName("loginCheck")[1].style.display = "none";
 
     let signInArrays = document.getElementsByClassName("signIn");
 
@@ -139,81 +150,78 @@ function disabilityFunct(event) {
 
 }
 
+var countDownDate = new Date("May 5, 2023 23:59:59").getTime();
+
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  if ( document.getElementById("timer")){
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  }
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+var y = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    if ( document.getElementById("zamanlayici") ){
+    document.getElementById("zamanlayici").innerHTML = days + "g " + hours + "s "
+    + minutes + "d " + seconds + "s ";
+    }
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("zamanlayici").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 
 
+// Get the button:
+let mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-//  function turkceYap(){
-
-//      sessionStorage.setItem("language" , "TR");
-//      console.log(document.getElementsByClassName("ENG"));
-
-//  if (sessionStorage.getItem("language") == "TR"){
-
-//     document.getElementsByClassName("ENG")[0].style.display = "none";
-//      document.getElementsByClassName("TR")[0].style.display = "block";
-    
-//  }
-
-//  }
-
-// function english(){
-
-//     sessionStorage.setItem("language" , "ENG");
-
-//     if(sessionStorage.getItem("language") == "ENG"){
-
-//         document.getElementsByClassName("TR")[0].style.display = "none";
-//         document.getElementsByClassName("ENG")[0].style.display = "block";
-    
-//     }
-
-// }
-
-// function turkceYap(){
-
-//     sessionStorage.setItem("language" , "TR");
-//     console.log(document.getElementsByClassName("ENG"));
-
-// if (sessionStorage.getItem("language") == "TR"){
-
-//     document.getElementsByClassName("text_ENG")[0].style.display = "none";
-//     document.getElementsByClassName("text_TR")[0].style.display = "block";
-//     document.getElementsByClassName("text_ENG")[1].style.display = "none";
-//     document.getElementsByClassName("text_TR")[1].style.display = "block";
-//     document.getElementsByClassName("text_ENG")[2].style.display = "none";
-//     document.getElementsByClassName("text_TR")[2].style.display = "block";
-//     document.getElementsByClassName("text_ENG")[3].style.display = "none";
-//     document.getElementsByClassName("text_TR")[3].style.display = "block";
-//     document.getElementsByClassName("text_ENG")[4].style.display = "none";
-//     document.getElementsByClassName("text_TR")[4].style.display = "block";
-    
-// }
-
-// }
-
-// function english(){
-
-//     sessionStorage.setItem("language" , "ENG");
-
-//     if(sessionStorage.getItem("language") == "ENG"){
-
-//         document.getElementsByClassName("text_TR")[0].style.display = "none";
-//         document.getElementsByClassName("text_ENG")[0].style.display = "block";
-//         document.getElementsByClassName("text_TR")[1].style.display = "none";
-//         document.getElementsByClassName("text_ENG")[1].style.display = "block";
-//         document.getElementsByClassName("text_TR")[2].style.display = "none";
-//         document.getElementsByClassName("text_ENG")[2].style.display = "block";
-//         document.getElementsByClassName("text_TR")[3].style.display = "none";
-//         document.getElementsByClassName("text_ENG")[3].style.display = "block";
-//         document.getElementsByClassName("text_TR")[4].style.display = "none";
-//         document.getElementsByClassName("text_ENG")[4].style.display = "block";
-    
-//     }
-
-// }
-
-
-
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
